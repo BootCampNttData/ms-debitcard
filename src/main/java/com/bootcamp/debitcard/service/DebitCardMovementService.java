@@ -5,10 +5,10 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface DebitCardMovementService {
-    Flux<DebitCardMovement> findAll();
-    Mono<DebitCardMovement> create(DebitCardMovement debitCardMovement);
-
-    Mono<DebitCardMovement> update(DebitCardMovement debitCardMovement);
-    Mono<DebitCardMovement> deleteById(String id);
+//    Flux<DebitCardMovement> findAll();
+//    Mono<DebitCardMovement> create(DebitCardMovement debitCardMovement);
+//
+//    Mono<DebitCardMovement> update(DebitCardMovement debitCardMovement);
+//    Mono<DebitCardMovement> deleteById(String id);
 
 }

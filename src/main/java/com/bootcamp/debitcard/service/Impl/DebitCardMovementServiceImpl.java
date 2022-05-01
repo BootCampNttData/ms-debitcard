@@ -13,26 +13,26 @@ import reactor.core.publisher.Mono;
 @RequiredArgsConstructor
 
 public class DebitCardMovementServiceImpl implements DebitCardMovementService {
-    public final DebitCardMovementRepository repository;
-
-    @Override
-    public Mono<DebitCardMovement> create(DebitCardMovement debitCardMovement) {
-        return repository.save(debitCardMovement);
-    }
-
-    @Override
-    public Mono<DebitCardMovement> update(DebitCardMovement debitCardMovement) {
-        return repository.save(debitCardMovement);
-    }
-
-    @Override
-    public Mono deleteById(String id) {
-        return repository.deleteById(id);
-    }
-
-    @Override
-    public Flux<DebitCardMovement> findAll() {
-        return repository.findAll();
-    }
+//    public final DebitCardMovementRepository repository;
+//
+//    @Override
+//    public Mono<DebitCardMovement> create(DebitCardMovement debitCardMovement) {
+//        return repository.save(debitCardMovement);
+//    }
+//
+//    @Override
+//    public Mono<DebitCardMovement> update(DebitCardMovement debitCardMovement) {
+//        return repository.save(debitCardMovement);
+//    }
+//
+//    @Override
+//    public Mono deleteById(String id) {
+//        return repository.deleteById(id);
+//    }
+//
+//    @Override
+//    public Flux<DebitCardMovement> findAll() {
+//        return repository.findAll();
+//    }
 
 }
