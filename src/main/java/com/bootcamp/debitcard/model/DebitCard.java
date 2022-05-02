@@ -13,7 +13,5 @@ public class DebitCard {
     @Id
     private String  id;
     private String  clientId;
-    private Integer debitCardNumber;
-    private Integer primaryAccount;
-    private Integer secondaryAccounts[];
+    private String debitCardNumber;
 }

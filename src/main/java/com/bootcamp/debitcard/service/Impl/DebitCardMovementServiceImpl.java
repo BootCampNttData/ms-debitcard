@@ -1,13 +1,9 @@
 package com.bootcamp.debitcard.service.Impl;
 
 
-import com.bootcamp.debitcard.model.DebitCardMovement;
-import com.bootcamp.debitcard.repository.DebitCardMovementRepository;
 import com.bootcamp.debitcard.service.DebitCardMovementService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 @Service
 @RequiredArgsConstructor
@@ -16,12 +12,12 @@ public class DebitCardMovementServiceImpl implements DebitCardMovementService {
 //    public final DebitCardMovementRepository repository;
 //
 //    @Override
-//    public Mono<DebitCardMovement> create(DebitCardMovement debitCardMovement) {
+//    public Mono<Accounts> create(Accounts debitCardMovement) {
 //        return repository.save(debitCardMovement);
 //    }
 //
 //    @Override
-//    public Mono<DebitCardMovement> update(DebitCardMovement debitCardMovement) {
+//    public Mono<Accounts> update(Accounts debitCardMovement) {
 //        return repository.save(debitCardMovement);
 //    }
 //
@@ -31,7 +27,7 @@ public class DebitCardMovementServiceImpl implements DebitCardMovementService {
 //    }
 //
 //    @Override
-//    public Flux<DebitCardMovement> findAll() {
+//    public Flux<Accounts> findAll() {
 //        return repository.findAll();
 //    }
 

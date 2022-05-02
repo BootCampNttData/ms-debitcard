@@ -1,8 +1,6 @@
 package com.bootcamp.debitcard.controller;
 
 import com.bootcamp.debitcard.model.DebitCard;
-import com.bootcamp.debitcard.model.DebitCardMovement;
-import com.bootcamp.debitcard.service.DebitCardMovementService;
 import com.bootcamp.debitcard.service.DebitCardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -47,27 +45,27 @@ public class DebitCardController {
 
 /** *******************************************************************************************/
 //    @GetMapping("/movement")
-//    public Flux<DebitCardMovement> getAllMovements(){
+//    public Flux<Accounts> getAllMovements(){
 //        return debitCardMovementService.findAll();
 //    }
 //
 ////    @GetMapping("/movement/find/{num}")
-////    public Flux<DebitCardMovement> getByIdDebitCard(@PathVariable("num") Integer num){
+////    public Flux<Accounts> getByIdDebitCard(@PathVariable("num") Integer num){
 ////        return debitCardMovementService.findByDebitCardNumber(num);
 ////    }
 //
 //    @PostMapping("/movement")
-//    public Mono<DebitCardMovement> create(@RequestBody DebitCardMovement debitCardMovement){
+//    public Mono<Accounts> create(@RequestBody Accounts debitCardMovement){
 //        return debitCardMovementService.create(debitCardMovement);
 //    }
 //
 //    @PostMapping("/movement/update")
-//    public Mono<DebitCardMovement> update(@RequestBody DebitCardMovement debitCardMovement){
+//    public Mono<Accounts> update(@RequestBody Accounts debitCardMovement){
 //        return debitCardMovementService.create(debitCardMovement);
 //    }
 //
 //    @DeleteMapping("/movement/byId/{id}")
-//    public Mono<DebitCardMovement> deleteMovementById(@PathVariable("id")  String id){
+//    public Mono<Accounts> deleteMovementById(@PathVariable("id")  String id){
 //        return debitCardMovementService.deleteById(id);
 //    }
 //
@@ -76,8 +74,8 @@ public class DebitCardController {
 //        double balance=0;
 ////        RestTemplate restTemplate=new RestTemplate();
 ////        String urlDp = actPrdUrl +"/debitCardMovement/find/" + account;
-////        ResponseEntity<DebitCardMovement[]> debitCardMovements = restTemplate.getForEntity(urlDp,DebitCardMovement[].class);
-////        for(DebitCardMovement am: debitCardMovements.getBody()){
+////        ResponseEntity<Accounts[]> debitCardMovements = restTemplate.getForEntity(urlDp,Accounts[].class);
+////        for(Accounts am: debitCardMovements.getBody()){
 ////            if (am.getMovementType().equals("D")){
 ////                balance += am.getAmount();
 ////            }else{

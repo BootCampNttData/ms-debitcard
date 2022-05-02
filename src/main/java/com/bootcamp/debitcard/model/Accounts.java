@@ -9,9 +9,12 @@ import java.util.Date;
 @Data
 @Document
 
-public class DebitCardMovement {
+public class Accounts {
     @Id
-    private String id;
+    private String  id;
+    private Integer accountNumber;
+    private Boolean isPrincipal;
+
     /**
     private Integer debitCardNumber;
     private String movementType;

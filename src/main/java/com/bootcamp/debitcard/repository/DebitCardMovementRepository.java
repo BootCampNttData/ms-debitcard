@@ -1,9 +1,8 @@
 package com.bootcamp.debitcard.repository;
 
-import com.bootcamp.debitcard.model.DebitCardMovement;
+import com.bootcamp.debitcard.model.Accounts;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
-import reactor.core.publisher.Flux;
 
-public interface DebitCardMovementRepository extends ReactiveCrudRepository<DebitCardMovement, String> {
-//    Flux<DebitCardMovement> findByDebitCardNumber(Integer num);
+public interface DebitCardMovementRepository extends ReactiveCrudRepository<Accounts, String> {
+//    Flux<Accounts> findByDebitCardNumber(Integer num);
 }
